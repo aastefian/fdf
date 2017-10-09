@@ -6,7 +6,7 @@
 /*   By: svilau <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/09 10:19:01 by svilau            #+#    #+#             */
-/*   Updated: 2016/09/14 09:41:07 by svilau           ###   ########.fr       */
+/*   Updated: 2016/09/15 16:10:38 by svilau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,9 +52,9 @@ int		key_handler(int keycode, void *param)
 	else if (keycode == 69 || keycode == 78)
 		zoom_handler(keycode, param);
 	else if (keycode == 123)
-		translate_left(param);
+		translate_left(param, LEFT_RIGHT_TRANSLATION_RATE);
 	else if (keycode == 124)
-		translate_right(param);
+		translate_right(param, LEFT_RIGHT_TRANSLATION_RATE);
 	else if (keycode == 126)
 		translate_up(param);
 	else if (keycode == 125)
@@ -80,7 +80,7 @@ void	event_handler(t_mlx mini_l, t_3d_p ***map)
 	data = (t_data*)malloc(sizeof(t_data) * 1);
 	(*data).mini_l = mini_l;
 	(*data).map = *map;
-	mlx_key_hook(mini_l.win, key_handler, data);
+	mlx_hook(mini_l.win, 2, 1, key_handler, data);
 }
 
 int		fdf(t_3d_p ***map)

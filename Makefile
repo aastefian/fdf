@@ -43,8 +43,29 @@ RM = rm -f
 all: $(NAME)
 
 $(NAME):
+	@echo "---------------------------------------------------------------------"
+	@echo "| ffffffffffffffff   DDDDDDDDDDDDD            ffffffffffffffff      |"
+	@echo "| f::::::::::::::::f  D::::::::::::DDD        f::::::::::::::::f    |"
+	@echo "| f::::::::::::::::::f D:::::::::::::::DD     f::::::::::::::::::f  |"
+	@echo "| f::::::fffffff:::::f DDD:::::DDDDD:::::D    f::::::fffffff:::::f  |"
+	@echo "| f:::::f       ffffff   D:::::D    D:::::D   f:::::f       ffffff  |"
+	@echo "| f:::::f                D:::::D     D:::::D  f:::::f               |"
+	@echo "| f:::::::ffffff         D:::::D     D:::::D f:::::::ffffff         |"
+	@echo "| f::::::::::::f         D:::::D     D:::::D f::::::::::::f         |"
+	@echo "| f::::::::::::f         D:::::D     D:::::D f::::::::::::f         |"
+	@echo "| f:::::::ffffff         D:::::D     D:::::D f:::::::ffffff         |"
+	@echo "| f:::::f                D:::::D     D:::::D  f:::::f               |"
+	@echo "| f:::::f                D:::::D    D:::::D   f:::::f               |"
+	@echo "| f:::::::f             DDD:::::DDDDD:::::D   f:::::::f             |"
+	@echo "| f:::::::f             D:::::::::::::::DD    f:::::::f             |"
+	@echo "| f:::::::f             D::::::::::::DDD      f:::::::f             |"
+	@echo "| fffffffff             DDDDDDDDDDDDD         fffffffff             |"
+	@echo "---------------------------------------------------------------------"
+	@echo "--Compiling libraries--"
 	@$(MAKE) $(MAKE_FLAGS) $(MAKE_SRC)
+	@echo "--Linking everything---"
 	@$(CC) $(FLAG) $(SRC) -o $(NAME)
+	@echo "--Done-----------------"
 
 clean:
 	@$(MAKE) $(MAKE_CLEAN) $(MAKE_FLAGS) $(MAKE_SRC)

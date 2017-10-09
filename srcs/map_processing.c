@@ -6,7 +6,7 @@
 /*   By: svilau <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/17 15:53:36 by svilau            #+#    #+#             */
-/*   Updated: 2016/09/14 09:41:02 by svilau           ###   ########.fr       */
+/*   Updated: 2016/09/14 10:17:27 by svilau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 void	check_map_first(char *file_name, char *language)
 {
@@ -56,8 +55,6 @@ void	check_map_second(t_3d_p **map, char *language)
 			put_error(3, language);
 		x++;
 	}
-	//if (x == 0 && map[x] == NULL)
-	//	put_error(4, language);
 }
 
 void	assign_map(t_3d_p ***map, char **temp, int width, int x)

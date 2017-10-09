@@ -6,13 +6,12 @@
 /*   By: svilau <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/23 11:14:27 by svilau            #+#    #+#             */
-/*   Updated: 2016/09/14 09:41:41 by svilau           ###   ########.fr       */
+/*   Updated: 2016/07/01 15:59:42 by svilau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fdf.h"
 #include "../mlx-lib/mlx.h"
-#include <stdio.h>
 
 void	wireframing(t_mlx mini_l, t_3d_p **map, t_size map_size, t_2d_p coord)
 {

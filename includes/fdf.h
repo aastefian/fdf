@@ -6,7 +6,7 @@
 /*   By: svilau <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/09 16:09:06 by svilau            #+#    #+#             */
-/*   Updated: 2016/07/01 16:43:17 by svilau           ###   ########.fr       */
+/*   Updated: 2016/09/15 11:41:09 by svilau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,8 +79,8 @@ void				clear_window(void *param);
 void				get_map(char *file_name, t_3d_p ***map, char *language);
 void				put_error(int code, char *language);
 void				render(t_2d_p *ren_point, t_3d_p point);
-void				translate_left(void *param);
-void				translate_right(void *param);
+void				translate_left(void *param, int nb);
+void				translate_right(void *param, int nb);
 void				translate_up(void *param);
 void				translate_down(void *param);
 void				rotate_z(void *param);

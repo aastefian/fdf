@@ -6,13 +6,13 @@
 /*   By: svilau <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/07 12:22:17 by svilau            #+#    #+#             */
-/*   Updated: 2016/05/17 16:17:45 by svilau           ###   ########.fr       */
+/*   Updated: 2016/09/15 15:50:43 by svilau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-#include <stddef.h>
+# include <stddef.h>
 
 void	*ft_memset(void *str, int c, size_t n);
 void	ft_bzero(void *str, size_t n);

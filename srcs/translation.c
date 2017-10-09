@@ -6,13 +6,13 @@
 /*   By: svilau <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/20 14:14:15 by svilau            #+#    #+#             */
-/*   Updated: 2016/07/01 15:58:56 by svilau           ###   ########.fr       */
+/*   Updated: 2016/09/14 10:34:30 by svilau           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fdf.h"
 
-void	translate_left(void *param)
+void	translate_left(void *param, int nb)
 {
 	t_data	*data;
 	int		x;
@@ -26,8 +26,8 @@ void	translate_left(void *param)
 		y = 0;
 		while ((*data).map[x][y].end)
 		{
-			(*data).map[x][y].y += LEFT_RIGHT_TRANSLATION_RATE;
-			(*data).map[x][y].x -= LEFT_RIGHT_TRANSLATION_RATE;
+			(*data).map[x][y].y += nb;
+			(*data).map[x][y].x -= nb;
 			(*data).map[x][y].color = DEFAULT_COLOR;
 			y++;
 		}
@@ -36,7 +36,7 @@ void	translate_left(void *param)
 	put_map((*data).mini_l, (*data).map);
 }
 
-void	translate_right(void *param)
+void	translate_right(void *param, int nb)
 {
 	t_data	*data;
 	int		x;
@@ -50,8 +50,8 @@ void	translate_right(void *param)
 		y = 0;
 		while ((*data).map[x][y].end)
 		{
-			(*data).map[x][y].y -= LEFT_RIGHT_TRANSLATION_RATE;
-			(*data).map[x][y].x += LEFT_RIGHT_TRANSLATION_RATE;
+			(*data).map[x][y].y -= nb;
+			(*data).map[x][y].x += nb;
 			(*data).map[x][y].color = DEFAULT_COLOR;
 			y++;
 		}
