@@ -1,0 +1,15 @@
+./fdf ../tests/42 fr
+./fdf ../tests/10-2 fr
+./fdf ../tests/100-6 fr
+./fdf ../tests/false fr
+./fdf ../tests/pyramid.txt fr
+./fdf ../tests/vide fr
+./fdf ~/Downloads/test_maps/10-70.fdf fr
+./fdf ~/Downloads/test_maps/20-60.fdf fr
+./fdf ~/Downloads/test_maps/50-4.fdf fr
+./fdf ~/Downloads/test_maps/basictest.fdf fr
+./fdf ~/Downloads/test_maps/elem.fdf fr
+./fdf ~/Downloads/test_maps/mars.fdff r
+./fdf ~/Downloads/test_maps/plat.fdf fr
+./fdf ~/Downloads/test_maps/pnp_flat.fdf fr
+./fdf ~/Downloads/test_maps/pyramide.fdf fr
